@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF monitoramento</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Nunito+Sans:wght@200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerHeaderPDF">
+        <div class="logo">
+          <img src="./assets/logoSomaiLight.svg" class="imgLogo" />
+          <p class="textLogo">
+            Sistema de Observação <br />
+            e Monitoramento <br />
+            da Amazônia Indígena
+          </p>
+        </div>
+
+        <p class="siteHeader">somai.org.br</p>
+      </div>
+
+      <div class="redLine"></div>
+
+      <div class="containerData">
+        <div class="indigenousLandImage">
+          <h1 class="titleIndigenousLand">
+            TERRA INDÍGENA: <b class="titleIndigenousLandBold">ACIMÃ</b>
+          </h1>
+
+          <div class="alingImageIndigenousIsland">
+            <img src="./assets/mapa.png" style="width: 50%; height: 200px" />
+          </div>
+
+          <p class="source">Fonte: IPAM, 2022</p>
+        </div>
+
+        <div class="containerTerritoryData">
+          <div class="containerTitleTerritoryData">
+            <h3 class="titleTerritoryData">DADOS DO TERRITÓRIO</h3>
+            <div class="lineGray"></div>
+          </div>
+
+          <div class="dataTerritoryData">
+            <div class="containerItemData">
+              <img src="./assets/setLocation.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">
+                  Localização: 2°35'19.19"S, 60° 1'59.91"O
+                </p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+
+            <div class="containerItemData">
+              <img src="./assets/cut1.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">Área Total (HA): 563.429</p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+
+            <div class="containerItemData">
+              <img src="./assets/barGarph1.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">População: 835.345</p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+
+            <div class="containerItemData">
+              <img src="./assets/profileOrange.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">População: 835.345</p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+
+            <div class="containerItemData">
+              <img src="./assets/location.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">Presença de povos isolados: s/n</p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+
+            <div class="containerItemData">
+              <img src="./assets/edit.svg" class="imgItemData" />
+              <div class="dataWithLineItemData">
+                <p class="textItemData">Situação jurídica: homologado</p>
+                <div class="lineBeige"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerThreatsAndAlerts">
+          <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
+          <div class="lineGray"></div>
+
+          <div class="containerGraphDonutThreatsAndAlerts">
+            <div class="divtitleThreatsAndAlerts">
+              <img
+                src="./assets/ic_desmatamento_ilegal.svg"
+                class="imgThreatsAndAlerts"
+              />
+              <p class="titleTypeAlertThreatsAndAlerts">
+                <n style="font-weight: 700">Dados do desmatamento</n> (2021)
+              </p>
+            </div>
+
+            <div class="containerDonutGraph">
+              <div class="divDoughnutGraph">
+                <p class="titleDoughnutGraph">DESMATARMENTO DENTRO DO TERRITÓRIO</p>
+                <canvas
+                  id="myChart1"
+                class="teste"
+                ></canvas>
+              </div>
+
+              <div class="lineGrayVertical"> </div>
+
+              <div class="divDoughnutGraph">
+                <p class="titleDoughnutGraph">DESMATARMENTO FORA DO TERRITÓRIO</p>
+                <canvas
+                  id="myChart2"
+                  class="teste"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerPage"></div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc.1/dist/chartjs-plugin-datalabels.min.js"
+      integrity="sha256-Oq8QGQ+hs3Sw1AeP0WhZB7nkjx6F1LxsX6dCAsyAiA4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //1º chart Pie
+      // setup
+      const dataInsideTi = {
+       
+        datasets: [
+          {
+            label: "Desmatado",
+            data: [20, 80],
+            backgroundColor: ["#D85127", "#C12233"],
+            borderWidth: 1,
+            animation: {
+              duration: 0,
+            },
+          },
+        ],
+      };
+      // config
+      const configInsideTi = {
+        type: "doughnut",
+        data: dataInsideTi,
+        options: {
+          responsive: true,
+          plugins: {
+            labels: {
+              fontColor: "white",
+              fontSize: 20,
+              fontWeight: "bold",
+            },
+          },
+        },
+      };
+      // render init block
+      const myChartPieInsideTi = new Chart(
+        document.getElementById("myChart1"),
+        configInsideTi
+      );
+
+      //2º chart Pie
+      // setup
+      const dataInsideTi2 = {
+
+        datasets: [
+          {
+            label: "Desmatado",
+            data: [20, 80],
+            backgroundColor: ["#D85127", "#C12233"],
+            borderWidth: 1,
+            animation: {
+              duration: 0,
+            },
+          },
+        ],
+      };
+      // config
+      const configInsideTi2 = {
+        type: "doughnut",
+        data: dataInsideTi2,
+        options: {
+          responsive: true,
+          plugins: {
+            labels: {
+              fontColor: "white",
+              fontSize: 20,
+              fontWeight: "bold",
+            },
+          },
+        },
+      };
+      // render init block
+      const myChartPieInsideTi2 = new Chart(
+        document.getElementById("myChart2"),
+        configInsideTi
+      );
+    </script>
+  </body>
+</html>

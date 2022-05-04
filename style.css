@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin:0 ;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    min-width: 100%; 
+    box-sizing: border-box;
+    background-color: #F8F6F3;
+ 
+}
+
+.container{
+    max-width: 100%;
+    min-width: 100%;
+
+    box-sizing: border-box;
+}
+
+.containerData{
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------- Header  --------------------------------------- */
+
+.containerHeaderPDF{
+    width: 100%;
+    max-height: 7.5vh;
+    min-height: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D85127;
+    padding-top: 0.5vh ;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+}
+
+.textLogo{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.imgLogo{
+    width: 100px;
+    height: 100px;
+}
+
+.siteHeader{
+    color: #ffffff;
+    transform: translateY(100%);
+    font-size: 0.7rem;
+}
+
+.redLine{
+    min-height: 0.5vh;
+    background-color: #C82026;
+}
+
+/* --------------------------------------- Terra indigena --------------------------------------- */
+
+
+.indigenousLandImage{
+    width: 100%;
+    max-height:41vh;
+    min-height:41vh;
+    padding-top: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.titleIndigenousLand{
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.titleIndigenousLandBold{
+    height: 100%;
+    font-weight: 900;
+}
+
+.alingImageIndigenousIsland{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C82026;
+}
+
+.source{
+    color: #534743 ;
+    font-size: 10px;
+}
+
+/* --------------------------------------- Dados do territorio --------------------------------------- */
+
+.containerTerritoryData{
+    width: 100%;
+    max-height: 16vh;
+    min-height: 16vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: yellow;
+}
+
+.containerTitleTerritoryData{
+    width: 100%;
+    padding-bottom: 1vh;
+}
+
+.titleTerritoryData{
+    color: #D85127;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.lineGray{
+    width: 100%;
+    min-height: 1px;
+    max-height: 1px;
+    background-color: #968D87;
+}
+
+
+.dataTerritoryData{
+    margin-top: 0.5vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+
+.containerItemData{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.textItemData{
+    color: #1D140F;
+}
+
+.dataWithLineItemData{
+    width: 100%;
+    
+}
+
+.imgItemData{
+    width: 20px;
+    height: 20px;
+}
+
+.lineBeige{
+    min-width: 100%;
+    min-height: 0.5px;
+    background-color: #C2BCB8 ;
+}
+
+/* --------------------------------------- Ameaças e alertas --------------------------------------- */
+
+.containerThreatsAndAlerts{
+    max-height: 31vh;
+    min-height: 31vh;
+    background-color: blueviolet;
+    padding-top: 1vh;
+
+}
+
+.titleThreatsAndAlerts{
+    color: #D85127;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.containerGraphDonutThreatsAndAlerts{
+    padding-top: 1vh;
+}
+
+.divtitleThreatsAndAlerts{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: red;
+}
+
+.imgThreatsAndAlerts{
+    width: 20px;
+    height: 20px;
+}
+
+.titleTypeAlertThreatsAndAlerts{
+    color: #1D140F;
+}
+
+.containerDonutGraph{
+
+    height: 25vh !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.divDoughnutGraph{
+    max-height: 25vh;
+    min-height: 25vh;
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+    background-color: beige;
+}
+
+.lineGrayVertical{
+    min-height: 80%;
+    width: 1px;
+    background-color: #968D87;
+}
+
+.teste{
+    width: 25vh !important;
+    height: 25vh !important;
+}
+/* --------------------------------------- footer --------------------------------------- */
+
+.footerPage{
+    max-height: 4vh;
+    min-height: 4vh;
+    background-color: blue;
+}
+
+
+
+
