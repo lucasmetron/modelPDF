@@ -222,7 +222,6 @@ body{
 }
 
 .containerDonutGraph{
-
     height: 25vh !important;
     display: flex;
     align-items: center;
@@ -235,9 +234,20 @@ body{
     min-height: 25vh;
     width: 100%;
     display: flex;
-   
     align-items: center;
     background-color: beige;
+}
+
+.containerInformationDoughnutGraph{
+    align-self: flex-start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vh;
+    padding-top: 2vh;
+    background-color: #C2BCB8;
 }
 
 .lineGrayVertical{
@@ -246,18 +256,61 @@ body{
     background-color: #968D87;
 }
 
-.teste{
+.informationDoughnutGraph{
+    font-size: 0.8rem
+}
+
+.doughnutGraph{
     width: 25vh !important;
     height: 25vh !important;
 }
+
+.titleDoughnutGraph{
+    
+}
+
+.divBallData{
+    display: flex;
+    align-items: center;
+    gap:0.5rem
+}
+
+.greenBall{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #0c6b4b;
+}
+
+.orangeBall{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #d85127;
+}
+
 /* --------------------------------------- footer --------------------------------------- */
 
 .footerPage{
-    max-height: 4vh;
-    min-height: 4vh;
+
+    max-height: 3vh;
+    min-height: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
     background-color: blue;
 }
 
+.footerData{
+    padding-top: 0.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
 
 
 
