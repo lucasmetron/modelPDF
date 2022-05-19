@@ -17,7 +17,10 @@
     <div class="container">
       <div class="containerHeaderPDF">
         <div class="logo">
-          <img src="./assets/logoSomaiLight.svg" class="imgLogo" />
+          <img
+            src="./assets/iconsPDFMonitoring/logoSomaiLight.svg"
+            class="imgLogo"
+          />
           <p class="textLogo">
             Sistema de Observação <br />
             e Monitoramento <br />
@@ -30,6 +33,8 @@
 
       <div class="redLine"></div>
 
+      <!-- 1° primeira pagina -->
+
       <div class="containerData">
         <div class="indigenousLandImage">
           <h1 class="titleIndigenousLand">
@@ -37,7 +42,10 @@
           </h1>
 
           <div class="alingImageIndigenousIsland">
-            <img src="./assets/mapa.png" style="width: 50%; height: 200px" />
+            <img
+              src="./assets/iconsPDFMonitoring/mapa.png"
+              style="width: 50%; height: 200px"
+            />
           </div>
 
           <p class="source">Fonte: IPAM, 2022</p>
@@ -51,7 +59,10 @@
 
           <div class="dataTerritoryData">
             <div class="containerItemData">
-              <img src="./assets/setLocation.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/setLocation.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">
                   Localização: 2°35'19.19"S, 60° 1'59.91"O
@@ -61,7 +72,10 @@
             </div>
 
             <div class="containerItemData">
-              <img src="./assets/cut1.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/cut1.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">Área Total (HA): 563.429</p>
                 <div class="lineBeige"></div>
@@ -69,7 +83,10 @@
             </div>
 
             <div class="containerItemData">
-              <img src="./assets/barGarph1.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/barGarph1.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">População: 835.345</p>
                 <div class="lineBeige"></div>
@@ -77,7 +94,10 @@
             </div>
 
             <div class="containerItemData">
-              <img src="./assets/profileOrange.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/profileOrange.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">População: 835.345</p>
                 <div class="lineBeige"></div>
@@ -85,7 +105,10 @@
             </div>
 
             <div class="containerItemData">
-              <img src="./assets/location.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/location.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">Presença de povos isolados: s/n</p>
                 <div class="lineBeige"></div>
@@ -93,7 +116,10 @@
             </div>
 
             <div class="containerItemData">
-              <img src="./assets/edit.svg" class="imgItemData" />
+              <img
+                src="./assets/iconsPDFMonitoring/edit.svg"
+                class="imgItemData"
+              />
               <div class="dataWithLineItemData">
                 <p class="textItemData">Situação jurídica: homologado</p>
                 <div class="lineBeige"></div>
@@ -103,66 +129,195 @@
         </div>
 
         <div class="containerThreatsAndAlerts">
-          <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
-          <div class="lineGray"></div>
+          <div class="containerTitleThreatsAndAlerts">
+            <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
+            <div class="lineGray"></div>
+          </div>
 
-          <div class="containerGraphDonutThreatsAndAlerts">
-            <div class="divtitleThreatsAndAlerts">
-              <img
-                src="./assets/ic_desmatamento_ilegal.svg"
-                class="imgThreatsAndAlerts"
-              />
-              <p class="titleTypeAlertThreatsAndAlerts">
-                <n style="font-weight: 700">Dados do desmatamento</n> (2021)
-              </p>
+          <div class="containerImgWithTypeAlert">
+            <img
+              class="imgTitleThreatsAndAlerts"
+              src="./assets/iconsPDFMonitoring/ic_desmatamento_ilegal.svg"
+            />
+            <p><b>Dados do desmatamento</b> (2021)</p>
+          </div>
+
+          <div class="dataContainerThreatsAndAlerts">
+            <div class="dataThreatsAndAlerts">
+              <div class="deforestationThreatsAndAlerts">
+                <h4 class="titleDeforestationThreatsAndAlerts">
+                  DESMATARMENTO DENTRO DO TERRITÓRIO
+                </h4>
+                <div class="containerBallDoughnut">
+                  <div class="containerDoughnutGraph">
+                    <canvas id="myChart1" class="doughnutGraph"></canvas>
+                  </div>
+
+                  <div style="display: flex; gap: 5px; flex-direction: column">
+                    <div class="containerBallThreatsAndAlerts">
+                      <div class="greenBall"></div>
+                      <p>CONSERVADA: 50%</p>
+                    </div>
+                    <div class="containerBallThreatsAndAlerts">
+                      <div class="orangeBall"></div>
+                      <p>DESMATADA: 50%</p>
+                    </div>
+                    <p class="sourceThreatsAndAlerts">Fonte: IPAM, 2022</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="containerDonutGraph">
-              <div class="divDoughnutGraph">
-                <div class="containerInformationDoughnutGraph">
-                  <p class="titleDoughnutGraph">DESMATARMENTO DENTRO DO TERRITÓRIO</p>
-                  <div class="divBallData">
-                    <div class="greenBall"></div>
-                    <p class="informationDoughnutGraph">  CONSERVADA: <b>50%</b></p>
-                  </div>
-                  <div class="divBallData">
-                    <div class="orangeBall"></div>
-                    <p  class="informationDoughnutGraph"> DESMATADA: <b>50%</b></p>
-                  </div>
-                </div>
-                <canvas
-                  id="myChart1"
-                  class="doughnutGraph"
-                ></canvas>
-              </div>
-              <div class="lineGrayVertical"> </div>
+            <div class="lineGrayThreatsAndAlerts"><p>.</p></div>
 
-              <div class="divDoughnutGraph">
-                <div class="containerInformationDoughnutGraph">
-                  <p class="titleDoughnutGraph">DESMATARMENTO FORA DO TERRITÓRIO</p>
-                  <div class="divBallData">
-                    <div class="greenBall"></div>
-                    <p class="informationDoughnutGraph">  CONSERVADA: <b>50%</b></p>
+            <div class="dataThreatsAndAlerts">
+              <div class="deforestationThreatsAndAlerts">
+                <h4 class="titleDeforestationThreatsAndAlerts">
+                  DESMATARMENTO FORA DO TERRITÓRIO
+                </h4>
+                <div class="containerBallDoughnut">
+                  <div class="containerDoughnutGraph">
+                    <canvas id="myChart2" class="doughnutGraph"></canvas>
                   </div>
-                  <div class="divBallData">
-                    <div class="orangeBall"></div>
-                    <p  class="informationDoughnutGraph"> DESMATADA: <b>50%</b></p>
+                  <div style="display: flex; gap: 5px; flex-direction: column">
+                    <div class="containerBallThreatsAndAlerts">
+                      <div class="greenBall"></div>
+                      <p>CONSERVADA: 50%</p>
+                    </div>
+                    <div class="containerBallThreatsAndAlerts">
+                      <div class="orangeBall"></div>
+                      <p c>DESMATADA: 50%</p>
+                    </div>
+                    <p class="sourceThreatsAndAlerts">Fonte: IPAM, 2022</p>
                   </div>
                 </div>
-                <canvas
-                  id="myChart2"
-                  class="doughnutGraph"
-                ></canvas>
               </div>
             </div>
           </div>
         </div>
 
         <div class="footerPage">
-          <div class="lineGray" ></div>
+          <div class="lineGray"></div>
           <div class="footerData">
-            <p><b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA: <b>ACIMÃ</b></p>
+            <p>
+              <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+              <b>ACIMÃ</b>
+            </p>
             <p>01 / 05</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2° segunda pagina -->
+
+      <div class="containerHeaderPDF">
+        <div class="logo">
+          <img
+            src="./assets/iconsPDFMonitoring/logoSomaiLight.svg"
+            class="imgLogo"
+          />
+          <p class="textLogo">
+            Sistema de Observação <br />
+            e Monitoramento <br />
+            da Amazônia Indígena
+          </p>
+        </div>
+
+        <p class="siteHeader">somai.org.br</p>
+      </div>
+      <div class="redLine"></div>
+
+      <div class="containerData">
+        <div class="deforestationLast30days">
+          <div class="containerTitleThreatsAndAlerts">
+            <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
+            <div class="lineGray"></div>
+          </div>
+
+          <div style="display: flex">
+            <img
+              src="./assets/iconsPDFMonitoring/ic_exploração_ilegal.png"
+              style="width: 20px; margin-right: 10px"
+            />
+            <p style="font-weight: 900">Alertas de desmatamento</p>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p style="font-size: 12px; color: #342722; font-weight: 900">
+              ALERTA DE DESMATAMENTO — ÚLTIMOS 30 DIAS
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Área Desmatada (ha) X mês)
+              </p>
+             
+            </div>
+          </div>
+          <canvas id="myChart3" class="graph"></canvas>
+        </div>
+
+        <div class="horizontalLineGray"></div>
+
+        <div class="deforestationPerMonth">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p style="font-size: 12px; color: #342722; font-weight: 900">
+              ALERTA DE DESMATAMENTO POR MÊS
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Área Desmatada (ha) X mês)
+              </p>
+             
+            </div>
+          </div>
+
+          <canvas id="myChart4" class="graph"></canvas>
+        </div>
+
+        <div class="footerPage" style="margin-top:22px;">
+          <div class="lineGray"></div>
+          <div class="footerData">
+            <p>
+              <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+              <b>ACIMÃ</b>
+            </p>
+            <p>02 / 05</p>
           </div>
         </div>
       </div>
@@ -182,12 +337,11 @@
       //1º chart Pie
       // setup
       const dataInsideTi = {
-       
         datasets: [
           {
             label: "Desmatado",
             data: [20, 80],
-            backgroundColor: ["#D85127", "#C12233"],
+            backgroundColor: ["#D85127", "#0c6b4b"],
             borderWidth: 1,
             animation: {
               duration: 0,
@@ -219,7 +373,6 @@
       //2º chart Pie
       // setup
       const dataInsideTi2 = {
-
         datasets: [
           {
             label: "Desmatado",
@@ -252,6 +405,118 @@
         document.getElementById("myChart2"),
         configInsideTi
       );
+
+      //3° grafico em barras
+      let ctx3 = document.getElementById("myChart3").getContext("2d");
+      let myChart3 = new Chart(ctx3, {
+        type: "bar",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "Dentro da TI",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              backgroundColor: "#0c6b4b",
+              borderColor: "#0c6b4b",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#0c6b4b",
+              },
+            },
+            {
+              label: "Entorno da TI (10km)",
+              data: [10,20,30,40,5,64,6],
+              backgroundColor: "#ED6C2E",
+              borderColor: "#ED6C2E",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#ED6C2E",
+              },
+            },
+          ],
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          plugins: {
+            font: { weight: 700 },
+          },
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
+
+      //4° grafico em barras
+      let ctx4 = document.getElementById("myChart4").getContext("2d");
+      let myChart4 = new Chart(ctx4, {
+        type: "bar",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "Dentro da TI",
+              data: [10,20,30,40,5,64,6],
+              backgroundColor: "#0c6b4b",
+              borderColor: "#0c6b4b",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#0c6b4b",
+              },
+            },
+            {
+              label: "Entorno da TI (10km)",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              backgroundColor: "#ED6C2E",
+              borderColor: "#ED6C2E",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#ED6C2E",
+              },
+            },
+          ],
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          plugins: {
+            font: { weight: 700 },
+          },
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
     </script>
   </body>
 </html>
