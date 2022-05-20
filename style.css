@@ -95,7 +95,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: blue;
 }
 
 .footerData{
@@ -121,7 +120,6 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    background-color: aqua;
 }
 
 .titleIndigenousLand{
@@ -141,7 +139,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #C82026;
 }
 
 .source{
@@ -159,8 +156,6 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    background-color: yellow;
 }
 
 .containerTitleTerritoryData{
@@ -223,7 +218,6 @@ body{
 .containerThreatsAndAlerts{
     max-height: 32vh;
     min-height:32vh;
-    background-color: blueviolet;
     padding-top: 2px;
     box-sizing: content-box;
     display: flex;
@@ -266,8 +260,6 @@ body{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    background-color: #0c6b4b;
-
 }
 
 .dataThreatsAndAlerts{
@@ -275,7 +267,6 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: #C2BCB8;
 }
 
 .deforestationThreatsAndAlerts{
@@ -285,7 +276,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #C82026;
     color:#2f2726 ;
 }
 
@@ -321,7 +311,6 @@ body{
 .sourceThreatsAndAlerts{
     margin-top: 25px;
     font-size: 10px;
-    background-color: #0c6b4b;
 }
 
 .greenBall{
@@ -353,30 +342,45 @@ body{
     color: #2f2726;
 }
 
-/* --------------------------------------- 2° pagina --------------------------------------- */
+/* --------------------------------------- 3° pagina --------------------------------------- */
 
-/* --------------------------------------- deforestation last 30 days --------------------------------------- */
-
-.deforestationLast30days{
-    min-height: 42vh;
-
-    background-color: burlywood;
-}
-
-
-.horizontalLineGray{
+.fireRisk {
     width: 100%;
-    min-height: 2px;
-    background-color: #968D87;
-    margin-top:10px ;
-    margin-bottom: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
 
+  }
+  .fireRisk > p {
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .fireRiskGradiente {
+    display: flex;
+    min-width: 100%;
+    min-height:20px ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
 
-/* --------------------------------------- deforestation por months  --------------------------------------- */
-
-.deforestationPerMonth{
-    min-height: 42vh;
-
-    background-color: pink;
-}
+    background: rgb(58,151,80);
+    background: linear-gradient(90deg, rgba(58,151,80,1) 0%, rgba(251,182,86,1) 50%, rgba(218,38,38,1) 100%);
+  }
+  .arrowContainer {
+    position: relative;
+    width: 50%;
+    top: -13px;
+  }
+  .arrowFireRisk {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 0.5rem solid #1D140F;
+    position: absolute;
+  }

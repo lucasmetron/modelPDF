@@ -139,7 +139,7 @@
               class="imgTitleThreatsAndAlerts"
               src="./assets/iconsPDFMonitoring/ic_desmatamento_ilegal.svg"
             />
-            <p><b>Dados do desmatamento</b> (2021)</p>
+            <p style="margin-left: 10px"><b>Dados do desmatamento</b> (2021)</p>
           </div>
 
           <div class="dataContainerThreatsAndAlerts">
@@ -228,7 +228,13 @@
       <div class="redLine"></div>
 
       <div class="containerData">
-        <div class="deforestationLast30days">
+        <div
+          style="
+            min-height: 42vh;
+
+            position: relative;
+          "
+        >
           <div class="containerTitleThreatsAndAlerts">
             <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
             <div class="lineGray"></div>
@@ -268,15 +274,47 @@
               <p style="font-size: 12px; color: #514743">
                 (Área Desmatada (ha) X mês)
               </p>
-             
             </div>
           </div>
-          <canvas id="myChart3" class="graph"></canvas>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding-top: 20px;
+            "
+          >
+            <canvas
+              style="padding-bottom: 20px"
+              id="myChart3"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+              padding-top: 0px;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
         </div>
 
-        <div class="horizontalLineGray"></div>
+        <div
+          style="
+            width: 100%;
+            min-height: 2px;
+            background-color: #968d87;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          "
+        ></div>
 
-        <div class="deforestationPerMonth">
+        <div style="min-height: 42vh; position: relative">
           <div
             style="
               width: 100%;
@@ -303,14 +341,37 @@
               <p style="font-size: 12px; color: #514743">
                 (Área Desmatada (ha) X mês)
               </p>
-             
             </div>
           </div>
 
-          <canvas id="myChart4" class="graph"></canvas>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding-top: 20px;
+            "
+          >
+            <canvas
+              style="padding-top: 10px"
+              id="myChart4"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
         </div>
 
-        <div class="footerPage" style="margin-top:22px;">
+        <div class="footerPage" style="margin-top: 22px">
           <div class="lineGray"></div>
           <div class="footerData">
             <p>
@@ -318,6 +379,547 @@
               <b>ACIMÃ</b>
             </p>
             <p>02 / 05</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3° segunda pagina -->
+
+      <div class="containerHeaderPDF">
+        <div class="logo">
+          <img
+            src="./assets/iconsPDFMonitoring/logoSomaiLight.svg"
+            class="imgLogo"
+          />
+          <p class="textLogo">
+            Sistema de Observação <br />
+            e Monitoramento <br />
+            da Amazônia Indígena
+          </p>
+        </div>
+
+        <p class="siteHeader">somai.org.br</p>
+      </div>
+      <div class="redLine"></div>
+
+      <div class="containerData">
+        <div style="height: 37vh; position: relative">
+          <div class="containerTitleThreatsAndAlerts">
+            <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
+            <div class="lineGray"></div>
+          </div>
+          <div style="display: flex; align-items: flex-end">
+            <img
+              src="./assets/iconsPDFMonitoring/ic_fogo_ilegal.png"
+              style="width: 20px; margin-right: 10px"
+            />
+            <p style="font-weight: 900">Dados do Fogo</p>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p style="font-size: 12px; color: #342722; font-weight: 900">
+              FOCOS DE CALOR DENTRO DO TERRITÓRIO
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Número de focos de calor x biênio)
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              height: 24vh;
+              width: 100%;
+            "
+          >
+            <canvas
+              style="width: 100%; height: 230px; padding-top: 5px"
+              id="myChart5"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
+        </div>
+        <div
+          style="
+            width: 100%;
+            min-height: 2px;
+            background-color: #968d87;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          "
+        ></div>
+        <div style="height: 37vh; position: relative">
+          <div
+            style="display: flex; align-items: center; align-items: flex-end"
+          >
+            <img
+              src="./assets/iconsPDFMonitoring/ic_fogo_ilegal.png"
+              style="width: 20px; margin-right: 10px"
+            />
+            <p style="font-weight: 900">Alertas do fogo</p>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p
+              style="
+                font-size: 12px;
+                color: #342722;
+                font-weight: 900;
+                width: 50%;
+              "
+            >
+              TOTAL DE FOCOS NOS ÚLTIMOS 30 DIAS E TOTAL DE FOCOS NO MESMO
+              PERÍODO NOS ÚLTIMOS 5 ANOS
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Área Queimada (ha) X mês)
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; height: 250px">
+            <canvas
+              style="width: 100%; height: 230px; padding-top: 10px"
+              id="myChart6"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
+        </div>
+        <div
+          style="
+            width: 100%;
+            min-height: 2px;
+            background-color: #968d87;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          "
+        ></div>
+
+        <div style="height: 10vh">
+          <h4>Risco de fogo</h4>
+
+          <div class="fireRisk">
+            <div class="arrowContainer">
+              <div class="arrowFireRisk" style="left: 50px"></div>
+            </div>
+
+            <div class="fireRiskGradiente"></div>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <div
+                  style="
+                    background-color: #8d8077;
+                    min-width: 3px;
+                    max-width: 3px;
+                    min-height: 6px;
+                    margin: auto;
+                  "
+                ></div>
+                <p style="color: #8d8077; font-size: 10px" id="Mínimo">
+                  Mínimo
+                </p>
+              </div>
+              <div>
+                <div
+                  style="
+                    background-color: #8d8077;
+                    min-width: 3px;
+                    max-width: 3px;
+                    min-height: 6px;
+                    margin: auto;
+                  "
+                ></div>
+                <p style="color: #8d8077; font-size: 10px" id="Baixo">Baixo</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    background-color: #8d8077;
+                    min-width: 3px;
+                    max-width: 3px;
+                    min-height: 6px;
+                    margin: auto;
+                  "
+                ></div>
+                <p style="color: #8d8077; font-size: 10px" id="Médio">Médio</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    background-color: #8d8077;
+                    min-width: 3px;
+                    max-width: 3px;
+                    min-height: 6px;
+                    margin: auto;
+                  "
+                ></div>
+                <p style="color: #8d8077; font-size: 10px" id="Alto">Alto</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    background-color: #8d8077;
+                    min-width: 3px;
+                    max-width: 3px;
+                    min-height: 6px;
+                    margin: auto;
+                  "
+                ></div>
+                <p style="color: #8d8077; font-size: 10px" id="Crítico">
+                  Crítico
+                </p>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 10px; color: #514743; padding-top: 10px">
+            Fonte: IPAM, 2022
+          </p>
+        </div>
+
+        <div class="footerPage" style="margin-top: 1px">
+          <div class="lineGray"></div>
+          <div class="footerData">
+            <p>
+              <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+              <b>ACIMÃ</b>
+            </p>
+            <p>02 / 05</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4° segunda pagina -->
+
+      <div class="containerHeaderPDF">
+        <div class="logo">
+          <img
+            src="./assets/iconsPDFMonitoring/logoSomaiLight.svg"
+            class="imgLogo"
+          />
+          <p class="textLogo">
+            Sistema de Observação <br />
+            e Monitoramento <br />
+            da Amazônia Indígena
+          </p>
+        </div>
+
+        <p class="siteHeader">somai.org.br</p>
+      </div>
+      <div class="redLine"></div>
+
+      <div class="containerData">
+        <div
+          style="
+            min-height: 42vh;
+
+            position: relative;
+          "
+        >
+          <div class="containerTitleThreatsAndAlerts">
+            <h3 class="titleThreatsAndAlerts">AMEAÇAS E ALERTAS</h3>
+            <div class="lineGray"></div>
+          </div>
+
+          <div style="display: flex">
+            <img
+              src="./assets/iconsPDFMonitoring/ic_roca.png"
+              style="width: 20px; margin-right: 10px"
+            />
+            <p style="font-weight: 900">Clima</p>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p style="font-size: 12px; color: #342722; font-weight: 900">
+              FOCOS DE CALOR DENTRO DO TERRITÓRIO (2021)
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Temperatura média do solo (ºC) x Ano)
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding-top: 20px;
+            "
+          >
+            <canvas
+              style="padding-bottom: 20px"
+              id="myChart7"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+              padding-top: 0px;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
+        </div>
+
+        <div
+          style="
+            width: 100%;
+            min-height: 2px;
+            background-color: #968d87;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          "
+        ></div>
+
+        <div style="min-height: 42vh; position: relative">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              flex-direction: column;
+              padding-top: 10px;
+            "
+          >
+            <p style="font-size: 12px; color: #342722; font-weight: 900">
+              CHUVA ANUAL
+            </p>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+              "
+            >
+              <p style="font-size: 12px; color: #514743">
+                (Precipitação (mm) x Ano)
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding-top: 20px;
+            "
+          >
+            <canvas
+              style="padding-top: 10px"
+              id="myChart8"
+              class="graph"
+            ></canvas>
+          </div>
+
+          <p
+            style="
+              font-size: 10px;
+              color: #514743;
+              position: absolute;
+              bottom: 0;
+            "
+          >
+            Fonte: IPAM, 2022
+          </p>
+        </div>
+
+        <div class="footerPage" style="margin-top: 23px">
+          <div class="lineGray"></div>
+          <div class="footerData">
+            <p>
+              <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+              <b>ACIMÃ</b>
+            </p>
+            <p>02 / 05</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5° segunda pagina -->
+
+      <div class="containerHeaderPDF">
+        <div class="logo">
+          <img
+            src="./assets/iconsPDFMonitoring/logoSomaiLight.svg"
+            class="imgLogo"
+          />
+          <p class="textLogo">
+            Sistema de Observação <br />
+            e Monitoramento <br />
+            da Amazônia Indígena
+          </p>
+        </div>
+
+        <p class="siteHeader">somai.org.br</p>
+      </div>
+      <div class="redLine"></div>
+
+      <div class="containerData">
+        <div style="height: 48.7vh; overflow: hidden">
+          <div style="width: 100%">
+            <h3 style="color: #d85127; font-size: 15px; padding-top: 25px">
+              ANOTAÇÕES DO USUÁRIO
+            </h3>
+            <div
+              style="background-color: #968d87; width: 100%; height: 2px"
+            ></div>
+          </div>
+
+          <p style="padding-top: 10px; color: #514743; text-align: justify">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+            ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+            aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse molestie consequat, vel illum
+          </p>
+        </div>
+
+        <div
+          style="
+            height: 38.25vh;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+          "
+        >
+          <div style="width: 100%; padding-bottom: 15px">
+            <h3 style="color: #d85127; font-size: 15px">ACESSE A PLATAFORMA</h3>
+            <div
+              style="background-color: #968d87; width: 100%; height: 2px"
+            ></div>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+            "
+          >
+            <img src="assets//iconsPDFMonitoring/qrcodeSomai.png" />
+            <p style="color: #231f20">www.somai.org.br</p>
+          </div>
+        </div>
+
+        <div class="footerPage" style="margin-top: 23px">
+          <div class="lineGray"></div>
+          <div class="footerData">
+            <p>
+              <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+              <b>ACIMÃ</b>
+            </p>
+            <p>05 / 05</p>
           </div>
         </div>
       </div>
@@ -334,6 +936,18 @@
     ></script>
 
     <script>
+      //risco de fogo
+      function arrowPosition(point) {
+        let positions = [0, 10.2, 31, 50, 68.2, 87]; //posições em '%' testadas para pode posicionar a seta no lugar certo
+        let position = positions[parseInt(point)];
+
+        return `
+          <div class="arrowContainer">
+            <div class="arrowFireRisk" style="left: ${position}%"></div>
+          </div>
+        `;
+      }
+
       //1º chart Pie
       // setup
       const dataInsideTi = {
@@ -428,7 +1042,7 @@
             },
             {
               label: "Entorno da TI (10km)",
-              data: [10,20,30,40,5,64,6],
+              data: [10, 20, 30, 40, 5, 64, 6],
               backgroundColor: "#ED6C2E",
               borderColor: "#ED6C2E",
               borderWidth: 1,
@@ -471,7 +1085,7 @@
           datasets: [
             {
               label: "Dentro da TI",
-              data: [10,20,30,40,5,64,6],
+              data: [10, 20, 30, 40, 5, 64, 6],
               backgroundColor: "#0c6b4b",
               borderColor: "#0c6b4b",
               borderWidth: 1,
@@ -502,6 +1116,251 @@
           plugins: {
             font: { weight: 700 },
           },
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
+
+      // 5º gráfico de linha
+      var ctx5 = document.getElementById("myChart5").getContext("2d");
+      var myChart5 = new Chart(ctx5, {
+        type: "line",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "Dentro da TI",
+              data: [10, 20, 30, 40, 5, 64, 6],
+              backgroundColor: "#D85127",
+              borderColor: "#D85127",
+              borderWidth: 1,
+              datalabels: {
+                anchor: "end",
+                align: "top",
+                color: "#D85127",
+                font: { weight: 700 },
+              },
+            },
+            {
+              label: "Entorno da TI (10km)",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              backgroundColor: "#0c6b4b",
+              borderColor: "#0c6b4b",
+              borderWidth: 1,
+              datalabels: {
+                offset: 10,
+                align: 100,
+                color: "#0c6b4b",
+                font: { weight: 700 },
+              },
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: false,
+              offset: 10,
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          colors: "white",
+          offset: 10,
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
+
+      //6° grafico em barras
+      let ctx6 = document.getElementById("myChart6").getContext("2d");
+      let myChart6 = new Chart(ctx6, {
+        type: "bar",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "Dentro da TI",
+              data: [10, 20, 30, 40, 5, 64, 6],
+              backgroundColor: "#0c6b4b",
+              borderColor: "#0c6b4b",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#0c6b4b",
+              },
+            },
+            {
+              label: "Entorno da TI (10km)",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              backgroundColor: "#ED6C2E",
+              borderColor: "#ED6C2E",
+              borderWidth: 1,
+              datalabels: {
+                color: "black",
+                anchor: "end",
+                align: "top",
+                color: "#ED6C2E",
+              },
+            },
+          ],
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          plugins: {
+            font: { weight: 700 },
+          },
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
+
+      // 5º gráfico de linha
+      var ctx7 = document.getElementById("myChart7").getContext("2d");
+      var myChart7 = new Chart(ctx7, {
+        type: "line",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "MÍNIMA",
+              data: [30, 19, 50, 91, 16, 15, 20],
+              backgroundColor: "#31c3e6",
+              borderColor: "#31c3e6",
+              borderWidth: 1,
+              datalabels: {
+                offset: 10,
+                align: 100,
+                color: "#31c3e6",
+                font: { weight: 700 },
+              },
+            },
+            {
+              label: "MÉDIA",
+              data: [10, 20, 30, 40, 5, 64, 6],
+              backgroundColor: "#0c6b4b",
+              borderColor: "#0c6b4b",
+              borderWidth: 1,
+              datalabels: {
+                anchor: "end",
+                align: "top",
+                color: "#0c6b4b",
+                font: { weight: 700 },
+              },
+            },
+            {
+              label: "MÁXIMA",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              backgroundColor: "#D85127",
+              borderColor: "#D85127",
+              borderWidth: 1,
+              datalabels: {
+                offset: 10,
+                align: 100,
+                color: "#D85127",
+                font: { weight: 700 },
+              },
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: false,
+              offset: 10,
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          colors: "white",
+          offset: 10,
+          animation: {
+            duration: 0,
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grace: "10%",
+              title: {
+                display: true,
+                text: "Focus de calor",
+              },
+            },
+          },
+        },
+      });
+
+      // 5º gráfico de linha
+      var ctx8 = document.getElementById("myChart8").getContext("2d");
+      var myChart8 = new Chart(ctx8, {
+        type: "line",
+        data: {
+          labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+          datasets: [
+            {
+              label: "MÍNIMA",
+              data: [30, 19, 50, 91, 16, 15, 20],
+              backgroundColor: "#31c3e6",
+              borderColor: "#31c3e6",
+              borderWidth: 1,
+              datalabels: {
+                offset: 10,
+                align: 100,
+                color: "#31c3e6",
+                font: { weight: 700 },
+              },
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: false,
+              offset: 10,
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+        options: {
+          colors: "white",
+          offset: 10,
           animation: {
             duration: 0,
           },
