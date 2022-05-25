@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Painel</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Nunito+Sans:wght@200;300;400;600;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div
+      style="
+        width: 100%;
+        max-height: 7.5vh;
+        min-height: 7.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d85127;
+        padding-top: 0.5vh;
+        padding-left: 90px;
+        padding-right: 90px;
+        box-sizing: border-box;
+      "
+    >
+      <div style="display: flex; align-items: center">
+        <img src="./assets/logoSomaiLight.svg" style="width: 100px" />
+        <p
+          style="
+            margin-left: 15px;
+            font-size: 10px;
+            color: #f0e1d3;
+            width: 100%;
+          "
+        >
+          Sistema de Observação <br />
+          e Monitoramento <br />
+          da Amazônia Indígena
+        </p>
+      </div>
+
+      <p
+        style="
+          font-size: 12px;
+          color: #f0e1d3;
+          transform: translateY(100%);
+          font-size: 12px;
+        "
+      >
+        somai.org.br
+      </p>
+    </div>
+    <div class="redLine"></div>
+
+    <div class="containerData">
+      <div
+        style="
+          min-height: 27vh;
+          max-height: 27vh;
+          background-color: pink;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <p
+          style="
+            align-self: flex-start;
+            padding-top: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+          "
+        >
+          Meus <b>alertas</b>
+        </p>
+
+        <img
+          src="./assets/mapa.png"
+          style="width: 300px; padding-bottom: 20px"
+        />
+      </div>
+
+      <div
+        style="
+          min-height: 16vh;
+          max-height: 16vh;
+          background-color: cadetblue;
+          padding-top: 10px;
+        "
+      >
+        <b style="color: #d85127; font-size: 14px; text-transform: uppercase"
+          >DADOS DO TERRITÓRIO</b
+        >
+        <div
+          style="
+            width: 100%;
+            min-height: 2px;
+            background-color: #c2bcb8;
+            margin-bottom: 5px;
+          "
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/setLocation.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Localização:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/profileOrange.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Povo(s):</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/location.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px">
+                <b>Presença de povos isolados:</b> 30 alertas
+              </p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/cut1.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Area Total:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/barGarph1.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>População:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/edit.svg"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px">
+                <b>Situação jurídica:</b> 30 alertas
+              </p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          min-height: 16vh;
+          max-height: 16vh;
+          background-color: burlywood;
+          padding-top: 10px;
+        "
+      >
+        <b style="color: #d85127; font-size: 14px; text-transform: uppercase"
+          >meus alertas</b
+        >
+        <div
+          style="width: 100%; min-height: 2px; background-color: #c2bcb8"
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 5px;
+            "
+          >
+            <img
+              src="./assets/ic_fogo_ilegal.png"
+              style="width: 12px; margin-right: 5px"
+            />
+            <div style="width: 100%">
+              <p style="font-size: 13px"><b>Fogo:</b> 30 alertas</p>
+              <div
+                style="width: 95%; min-height: 2px; background-color: #c2bcb8"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="min-height: 25vh; max-height: 25vh; background-color: coral"
+      >
+        <div style="display: flex; align-items: center; height: 100%">
+          <canvas
+            id="myChart1"
+            class="doughnutGraph1"
+            style="width: 100%; height: 300px"
+          ></canvas>
+        </div>
+      </div>
+
+      <div
+        style="
+          margin-top: 52px;
+          max-height: 3vh;
+          min-height: 3vh;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: chocolate;
+        "
+      >
+        <div></div>
+        <div class="footerData">
+          <p>
+            <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+            <b>ACIMÃ</b>
+          </p>
+          <p>01 / 05</p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        width: 100%;
+        max-height: 7.5vh;
+        min-height: 7.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d85127;
+        padding-top: 0.5vh;
+        padding-left: 90px;
+        padding-right: 90px;
+        box-sizing: border-box;
+      "
+    >
+      <div style="display: flex; align-items: center">
+        <img src="./assets/logoSomaiLight.svg" style="width: 100px" />
+        <p
+          style="
+            margin-left: 15px;
+            font-size: 10px;
+            color: #f0e1d3;
+            width: 100%;
+          "
+        >
+          Sistema de Observação <br />
+          e Monitoramento <br />
+          da Amazônia Indígena
+        </p>
+      </div>
+
+      <p
+        style="
+          font-size: 12px;
+          color: #f0e1d3;
+          transform: translateY(100%);
+          font-size: 12px;
+        "
+      >
+        somai.org.br
+      </p>
+    </div>
+    <div class="redLine"></div>
+  </div>
+
+  <div class="containerData">
+    <div style="width: 100%; height: 89vh; background-color: cadetblue">
+      <p
+        style="
+          padding-top: 10px;
+          text-transform: uppercase;
+          color: #d85127;
+          font-size: 25px;
+          font-weight: 600;
+        "
+      >
+        alertas de fogo
+      </p>
+      <div style="width: 100%; height: 3px; background-color: #968d87"></div>
+
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        <div
+          style="
+            margin-right: 20px;
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/pointOnMap.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            max-height: 200px;
+            min-height: 200px;
+            margin-left: 10px;
+            font-size: 12px;
+           
+          "
+        >
+          <p>
+            <b>Registrado por</b> Lucas Rosa e <b> editado por </b> Leandro
+            Alves em: 14/02/2022 ás 14:52
+          </p>
+          <p><b>Status:</b> Em análise</p>
+          <p><b>Latitude:</b> -15.825518622350591</p>
+          <p><b>Longitude:</b> -48.07416267207322</p>
+          <p class="elipse">
+            <b>Descrição:</b>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged. It
+            was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        <div
+          style="
+            margin-right: 20px;
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/pointOnMap.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            max-height: 200px;
+            min-height: 200px;
+            margin-left: 10px;
+            font-size: 12px;
+          "
+        >
+          <p>
+            <b>Registrado por</b> Lucas Rosa e <b> editado por </b> Leandro
+            Alves em: 14/02/2022 ás 14:52
+          </p>
+          <p><b>Status:</b> Em análise</p>
+          <p><b>Latitude:</b> -15.825518622350591</p>
+          <p><b>Longitude:</b> -48.07416267207322</p>
+          <p class="elipse">
+            <b>Descrição:</b>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen
+            book.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        <div
+          style="
+            margin-right: 20px;
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/pointOnMap.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            max-height: 200px;
+            min-height: 200px;
+            margin-left: 10px;
+            font-size: 12px;
+          "
+        >
+          <p>
+            <b>Registrado por</b> Lucas Rosa e <b> editado por </b> Leandro
+            Alves em: 14/02/2022 ás 14:52
+          </p>
+          <p><b>Status:</b> Em análise</p>
+          <p><b>Latitude:</b> -15.825518622350591</p>
+          <p><b>Longitude:</b> -48.07416267207322</p>
+          <p class="elipse">
+            <b>Descrição:</b>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen
+            book.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        "
+      >
+        <div
+          style="
+            margin-right: 20px;
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            min-width: 200px;
+            min-height: 200px;
+            background-image: url(./assets/pointOnMap.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+          "
+        ></div>
+
+        <div
+          style="
+            width: 100%;
+            max-height: 200px;
+            min-height: 200px;
+            margin-left: 10px;
+            font-size: 12px;
+          "
+        >
+          <p>
+            <b>Registrado por</b> Lucas Rosa e <b> editado por </b> Leandro
+            Alves em: 14/02/2022 ás 14:52
+          </p>
+          <p><b>Status:</b> Em análise</p>
+          <p><b>Latitude:</b> -15.825518622350591</p>
+          <p><b>Longitude:</b> -48.07416267207322</p>
+          <p class="elipse">
+            <b>Descrição:</b>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen
+            book.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 0px;
+        max-height: 3vh;
+        min-height: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: chocolate;
+      "
+    >
+      <div></div>
+      <div class="footerData">
+        <p>
+          <b>RELATÓRIO</b> GERADO POR @USER, EM DD/MM/AAAA — TERRA INDÍGENA:
+          <b>ACIMÃ</b>
+        </p>
+        <p>01 / 05</p>
+      </div>
+    </div>
+  </div>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/chart.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc.1/dist/chartjs-plugin-datalabels.min.js"
+    integrity="sha256-Oq8QGQ+hs3Sw1AeP0WhZB7nkjx6F1LxsX6dCAsyAiA4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    //1° grafico em barras
+    let ctx1 = document.getElementById("myChart1").getContext("2d");
+    let myChart1 = new Chart(ctx1, {
+      type: "bar",
+      data: {
+        labels: ["jan", "fev", "mar", "abr", "maio", "jun", "jul"],
+        datasets: [
+          {
+            label: "Dentro da TI",
+            data: [65, 59, 80, 81, 56, 55, 40],
+            backgroundColor: "#0c6b4b",
+            borderColor: "#0c6b4b",
+            borderWidth: 1,
+            datalabels: {
+              color: "black",
+              anchor: "end",
+              align: "top",
+              color: "#0c6b4b",
+            },
+          },
+          {
+            label: "Entorno da TI (10km)",
+            data: [10, 20, 30, 40, 5, 64, 6],
+            backgroundColor: "#ED6C2E",
+            borderColor: "#ED6C2E",
+            borderWidth: 1,
+            datalabels: {
+              color: "black",
+              anchor: "end",
+              align: "top",
+              color: "#ED6C2E",
+            },
+          },
+        ],
+      },
+      plugins: [ChartDataLabels],
+      options: {
+        plugins: {
+          font: { weight: 700 },
+        },
+        animation: {
+          duration: 0,
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grace: "10%",
+            title: {
+              display: true,
+              text: "Focus de calor",
+            },
+          },
+        },
+      },
+    });
+  </script>
+</body>
+</html>
