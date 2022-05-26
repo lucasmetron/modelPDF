@@ -39,7 +39,7 @@ body{
 }
 
 .redLine{
-    min-height: 0.5vh;
+    min-height: 5px;
     background-color: #C82026;
 }
 
